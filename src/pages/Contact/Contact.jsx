@@ -1,4 +1,5 @@
 import React from "react";
+import "./contact.scss";
 import HeroImage from "../../components/HeroImage/HeroImage";
 import ContactForm from "../../components/formComponents/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
@@ -10,10 +11,10 @@ import Footer from "../../components/Footer/Footer";
  */
 export default function Contact() {
 	return (
-		<>
+		<div id="contact">
 			<HeroImage heroTitle="CONTACT" />
 			<ContactForm />
 			<Footer />
-		</>
+		</div>
 	);
 }
