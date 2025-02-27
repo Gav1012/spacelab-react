@@ -39,7 +39,7 @@ export default function ContactForm() {
 				<h3>Contact Us</h3>
 				<div className={"contact-form-field-container"}>
 					<form method={"POST"} onSubmit={handleSubmit}>
-						<div className="first-input-row">
+						<div className="input-rows">
 							<input
 								className="small-input"
 								id="firstName"
@@ -66,8 +66,6 @@ export default function ContactForm() {
 								field="lastName"
 								errors={state.errors}
 							/>
-						</div>
-						<div>
 							<input
 								className="small-input"
 								id="email"
@@ -81,8 +79,6 @@ export default function ContactForm() {
 								field="email"
 								errors={state.errors}
 							/>
-						</div>
-						<div>
 							<input
 								className="small-input"
 								id="phone"

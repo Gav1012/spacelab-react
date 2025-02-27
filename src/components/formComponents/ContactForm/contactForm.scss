@@ -12,14 +12,14 @@
 	.contact-form-wrapper {
 		display: flex;
 		flex-direction: column;
-		// background-color: var(--background);
 		background-color: rgba(28, 26, 34, 0.75);
 		color: white;
 		text-align: left;
 		font-size: 20px;
+		margin-top: 10%;
 		margin-bottom: 10%;
 		border: 1px solid white;
-		padding: 1rem 1rem 2rem 1rem;
+		padding: 1rem 2rem 3rem 2rem;
 
 		@media (min-width: 766px) {
 			align-items: initial;
@@ -31,11 +31,12 @@
 			margin-bottom: 1rem;
 		}
 
-		.first-input-row {
+		.input-rows {
 			width: 100%;
 			display: flex;
-			flex-direction: row;
-			gap:6px;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 0.5em;
 
 			@media (min-width: 767px) and (max-width: 1023px) {
 				min-width: 600px;
@@ -51,14 +52,20 @@
 
 		.small-input {
 			padding-left: 0.5rem;
-			// width: 50%;
+			width: 100%;
+			border: 1px solid white;
+			font-size: 20px;
+
+			@media (min-width: 767px) {
+				width: 48%;
+			}
 		}
 
 		.message-input {
 			width: 100%;
 			height: 250px;
-			margin-top: 2rem;
-			margin-bottom: 3%;
+			margin-top: 1rem;
+			margin-bottom: 5%;
 			font-size: 20px;
 			background: transparent;
 			color: white;
@@ -75,7 +82,12 @@
 			width: 50%;
 			height: 67px;
 			font-size: 24px;
+			background-color: rgba(28, 26, 34, 0.75);
 			margin: 0 auto;
+		}
+		
+		.submit-button:hover {
+			background-color: var(--neon-purple);
 		}
 	}
 }
