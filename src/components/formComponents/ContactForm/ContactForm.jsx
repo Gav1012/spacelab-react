@@ -36,7 +36,7 @@ export default function ContactForm() {
 	return (
 		<div id={"contact-form-container"}>
 			<div className="contact-form-wrapper">
-				<h2>Contact Us</h2>
+				<h3>Contact Us</h3>
 				<div className={"contact-form-field-container"}>
 					<form method={"POST"} onSubmit={handleSubmit}>
 						<div className="first-input-row">
@@ -44,7 +44,7 @@ export default function ContactForm() {
 								className="small-input"
 								id="firstName"
 								name="firstName"
-								placeholder="FIRST NAME"
+								placeholder="First Name"
 								type="firstName"
 								required
 							/>
@@ -56,7 +56,7 @@ export default function ContactForm() {
 							<input
 								className="small-input"
 								id="lastName"
-								placeholder="LAST NAME"
+								placeholder="Last Name"
 								name="lastName"
 								type="lastName"
 								required
@@ -69,8 +69,9 @@ export default function ContactForm() {
 						</div>
 						<div>
 							<input
+								className="small-input"
 								id="email"
-								placeholder="EMAIL"
+								placeholder="Email"
 								name="email"
 								type="email"
 								required
@@ -83,8 +84,9 @@ export default function ContactForm() {
 						</div>
 						<div>
 							<input
+								className="small-input"
 								id="phone"
-								placeholder="PHONE"
+								placeholder="Phone Number"
 								name="phone"
 								type="phone"
 							/>
@@ -99,7 +101,7 @@ export default function ContactForm() {
 								<textarea
 									className="message-input"
 									id="message"
-									placeholder="MESSAGE"
+									placeholder="Message"
 									name="message"
 									type="message"
 									required

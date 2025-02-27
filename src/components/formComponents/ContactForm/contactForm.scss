@@ -12,21 +12,23 @@
 	.contact-form-wrapper {
 		display: flex;
 		flex-direction: column;
-		background-color: var(--background);
+		// background-color: var(--background);
+		background-color: rgba(28, 26, 34, 0.75);
 		color: white;
 		text-align: left;
 		font-size: 20px;
 		margin-bottom: 10%;
+		border: 1px solid white;
+		padding: 1rem 1rem 2rem 1rem;
 
 		@media (min-width: 766px) {
 			align-items: initial;
 		}
 
-		h2 {
-			text-transform: uppercase;
+		h3 {
 			width: 85%;
-			margin-top: 2rem;
-			margin-bottom: 2rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 		}
 
 		.first-input-row {
@@ -48,7 +50,8 @@
 		}
 
 		.small-input {
-			width: 50%;
+			padding-left: 0.5rem;
+			// width: 50%;
 		}
 
 		.message-input {
@@ -60,7 +63,7 @@
 			background: transparent;
 			color: white;
 			border: 2px solid white;
-			padding: 5px;
+			padding: 1rem;
 		}
 
 		.contact-button-container {
@@ -71,7 +74,7 @@
 		.submit-button {
 			width: 50%;
 			height: 67px;
-			font-size: 36px;
+			font-size: 24px;
 			margin: 0 auto;
 		}
 	}
