@@ -1,6 +1,7 @@
 import React from "react";
 import "./contact.scss";
 import HeroImage from "../../components/HeroImage/HeroImage";
+import Navigation from "../../components/navigation/MainNavigation/MainNavigation";
 import ContactForm from "../../components/formComponents/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
 
@@ -12,7 +13,8 @@ import Footer from "../../components/Footer/Footer";
 export default function Contact() {
 	return (
 		<div id="contact">
-			<HeroImage heroTitle="CONTACT" />
+			<Navigation></Navigation>
+			<h1>Contact</h1>
 			<ContactForm />
 			<Footer />
 		</div>
